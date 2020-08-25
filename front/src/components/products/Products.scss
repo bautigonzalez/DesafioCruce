@@ -2,5 +2,16 @@
     padding: 30px 60px;
     @media(max-width: 767px){
         padding: 15px;
-    }    
+    }
+    .page-link{
+        border: 0px solid white;
+        color: #8C8C8C;
+        font-weight: bold;
+        margin: 0 5px;
+    }
+    .selectedPage{
+        border: 2px solid #F26522;
+        color: black;
+        border-radius: 12px;
+    }
 }
