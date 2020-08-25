@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap');
+
+.product{
+    font-family: 'Inter', sans-serif;
+    padding: 15px;
+    .divImg{
+        img{
+            max-width: 100%;
+        }
+    }
+    .pFunko{
+        color: #7D5A94;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+    .pName{
+        font-size: 95%;
+    }
+    .pCuota{
+        font-size: 85%;
+        color: #505050;
+        margin-bottom: 0;
+    }
+    .bold{
+        font-weight: bold;
+    }
+    .price{
+        font-size: 150%;
+        margin-bottom: 0;
+    }
+    .btnCart{
+        border: 2px solid #76B043;
+        border-radius: 6px;
+    }
+
+}
+
+
+@media(max-width: 767px){
+    .product{
+        border-top: 1px solid #F0F0F0;
+        .pName{
+            margin-bottom: 10px;
+        }
+        .price{
+            font-size: 130%;
+        }
+        .divImg{
+            padding-right: 0px;
+        }
+    }
+}    
