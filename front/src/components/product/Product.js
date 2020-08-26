@@ -7,6 +7,7 @@ export default ({product}) => {
           <div className="row">
                 <div className="col-5 col-sm-5 col-md-12 col-lg-12 col-xl-12 divImg">
                     <img src={product.image}/>
+                    {product.discount > 0 ? <img style={{marginTop:"-60px"}}src="/images/offer.png"/> : null}
                 </div>
                 <div className="col-7 col-sm-7 col-md-12 col-lg-12 col-xl-12 divText">
                     <p className="pFunko">Funko</p>
