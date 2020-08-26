@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchProducts } from "../../redux/action-creators/product";
+import { fetchProducts, deleteProduct } from "../../redux/action-creators/product";
+import { Link } from "react-router-dom"
 
 export default () => {
     const dispatch = useDispatch()
@@ -25,18 +26,19 @@ export default () => {
                         </thead>
                         <tbody>
                             {products.map(product=>(
-                            <tr>
+                            <tr key={product._id}>
                             <td>{product.name}</td>
                             <td>{"$ " + product.price}</td>
                             <td className="text-right">
-                                <a href="form.html" class="btn"><i class="fa fa-eye"></i></a>
-                                <a href="form.html" class="btn"><i class="fa fa-pencil"></i></a>
-                                <a href="form.html" class="btn"><i class="fa fa-trash"></i></a>
+                                <a className="btn"><i className="fa fa-eye"></i></a>
+                                <Link to={`/edit/${product._id}`} className="btn"><i className="fa fa-pencil"></i></Link>
+                                <a className="btn" onClick={()=>dispatch(deleteProduct(product._id))}><i className="fa fa-trash"></i></a>
                             </td>
                             </tr>
                             ))}
                         </tbody>
                     </table>
+                    <Link to="/addproduct"><button className="btn btn-light">Agregar un producto</button></Link>
                 </div>
             </div>
         </div>

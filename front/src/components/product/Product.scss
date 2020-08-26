@@ -15,6 +15,7 @@
     }
     .pName{
         font-size: 95%;
+        margin-bottom: 5px !important;
     }
     .pCuota{
         font-size: 85%;
@@ -39,6 +40,20 @@
     .newPrice{
         color: red;
         font-weight: bold;
+    }
+    .noStock{
+        color: red;
+        font-weight: bold;
+        font-size: 120%;
+    }
+    .btnNoStock{
+        padding: 10px 15px;
+        border: 2px solid #000000;
+        background-color: white;
+        box-shadow: 3px 1px 0px #000000;
+        border-radius: 6px;
+        font-weight: bold;
+        letter-spacing: 2px;
     }
 
 }

@@ -39,6 +39,9 @@ export default () => {
               </ul>
             </nav>
           </div>
+          <a href="https://wa.me/541150033456?text=Hola" className="float" target="_blank">
+            <i className="fa fa-whatsapp my-float"></i>
+          </a>
       </div>
     );
   };
